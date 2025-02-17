@@ -82,8 +82,8 @@ class LinearRegressor:
 
             predictions = X * self.coefficients + self.intercept
         else:
-            # TODO: Predict when X is more than one variable
-            predictions = X @ self.coefficients + self.intercept
+            # Predict when X is more than one variable
+            predictions = X.dot(self.coefficients) + self.intercept
         return predictions
 
 
